@@ -43,5 +43,5 @@ Este proyecto implementa un framework en Python para desarrollar y ejecutar agen
 
 
 5. **Github Badge**:
-![CI](https://github.com/XavierRomeuDev/MinecraftAgentFramework/actions/workflows/python-app.yml/badge.svg)
+![example workflow](https://github.com/XavierRomeuDev/MinecraftAgentFramework/actions/workflows/python-app.yml/badge.svg)
 

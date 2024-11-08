@@ -1,24 +1,31 @@
-[15:34:01] [Server thread/INFO]: Starting minecraft server version 1.12
-[15:34:01] [Server thread/INFO]: Loading properties
-[15:34:01] [Server thread/INFO]: Default game type: CREATIVE
-[15:34:01] [Server thread/INFO]: Generating keypair
-[15:34:01] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:34:01] [Server thread/INFO]: Using default channel type
-[15:34:01] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-ed8c725 (MC: 1.12) (Implementing API version 1.12-R0.1-SNAPSHOT)
-[15:34:01] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.10
-[15:34:01] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[15:34:01] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[15:34:01] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[15:34:01] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[15:34:01] [Server thread/INFO]: Preparing level "world"
-[15:34:01] [Server thread/INFO]: Preparing start region for level 0 (Seed: 8094760750219985010)
-[15:34:02] [Server thread/INFO]: Preparing spawn area: 86%
-[15:34:02] [Server thread/INFO]: Preparing start region for level 1 (Seed: 8094760750219985010)
-[15:34:03] [Server thread/INFO]: Preparing start region for level 2 (Seed: 8094760750219985010)
-[15:34:03] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.10
-[15:34:03] [Server thread/INFO]: [RaspberryJuice] Using port 4711
-[15:34:03] [Server thread/INFO]: [RaspberryJuice] Using ABSOLUTE locations
-[15:34:03] [Server thread/INFO]: [RaspberryJuice] Using BOTH clicks for hits
-[15:34:03] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[15:34:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[15:34:03] [Server thread/INFO]: Done (1,840s)! For help, type "help" or "?"
+[00:14:53] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 1008750ms behind, skipping 20175 tick(s)
+[00:55:00] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2401795ms behind, skipping 48035 tick(s)
+[01:12:45] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 1057162ms behind, skipping 21143 tick(s)
+[02:18:01] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3910702ms behind, skipping 78214 tick(s)
+[02:38:58] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 1075280ms behind, skipping 21505 tick(s)
+[03:43:51] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3887099ms behind, skipping 77741 tick(s)
+[03:43:51] [Server thread/WARN]: Time ran backwards! Did the system time change?
+[04:49:10] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3911817ms behind, skipping 78236 tick(s)
+[05:54:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3908940ms behind, skipping 78178 tick(s)
+[05:54:28] [Server thread/WARN]: Time ran backwards! Did the system time change?
+[06:11:00] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 985610ms behind, skipping 19712 tick(s)
+[06:23:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 540125ms behind, skipping 10802 tick(s)
+[07:27:56] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3887002ms behind, skipping 77740 tick(s)
+[08:06:52] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2328294ms behind, skipping 46565 tick(s)
+[08:06:53] [Server thread/WARN]: Time ran backwards! Did the system time change?
+[08:12:50] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 350792ms behind, skipping 7015 tick(s)
+[08:24:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 664801ms behind, skipping 13296 tick(s)
+[08:42:45] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 941107ms behind, skipping 18822 tick(s)
+[09:25:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2531802ms behind, skipping 50636 tick(s)
+[09:25:03] [Server thread/WARN]: Time ran backwards! Did the system time change?
+[10:26:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3652619ms behind, skipping 73052 tick(s)
+[11:27:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3651934ms behind, skipping 73038 tick(s)
+[12:28:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3652801ms behind, skipping 73056 tick(s)
+[12:45:45] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 1055561ms behind, skipping 21111 tick(s)
+[12:45:46] [Server thread/WARN]: Time ran backwards! Did the system time change?
+[13:02:24] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 993813ms behind, skipping 19876 tick(s)
+[13:19:59] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 1049772ms behind, skipping 20995 tick(s)
+[13:29:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 529707ms behind, skipping 10594 tick(s)
+[13:49:31] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 1047120ms behind, skipping 20942 tick(s)
+[13:53:26] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 229234ms behind, skipping 4584 tick(s)
+[13:53:33] [Thread-2/INFO]: Stopping server

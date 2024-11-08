@@ -1,6 +1,9 @@
 from abc import ABC, abstractmethod
 import mcpi.minecraft as minecraft
 import mcpi.block as block
+from functools import reduce
+import time
+import inspect
 
 # Conexión a Minecraft
 mc = minecraft.Minecraft.create()
@@ -19,7 +22,7 @@ class ChatBehavior(Behavior):
 # Comportamiento de un agente que insulta en el chat
 class InsultBehavior(Behavior):
     def action(self, message=None):
-        mc.postToChat(f"InsultBot dice: {message}, pero en realidad, ¡eres una tortuga!")
+        mc.postToChat(f"InsultBot dice: {message}, bien, pero en realidad, ¡eres un mal programador!")
 
 # Comportamiento de un agente que coloca TNT y la activa
 class TNTBehavior(Behavior):
@@ -71,3 +74,69 @@ class DestroyBehavior(Behavior):
         pos_z = 10       
         mc.setBlock(pos_x - 2, pos_y, pos_z, block.AIR.id)
         mc.postToChat("DestroyBehavior: Bloque destruido.")
+
+
+#Comportament per demostrar l'ús de la programació funcional
+class FunctionalBehavior(Behavior):
+    def __init__(self, actions):
+        self.actions = actions
+
+    def action(self, message=None):
+        pos = (10, 5, 10)
+        mc.postToChat(f"FunctionalAgent comienza en la posición {pos}")
+
+        # Filtrar acciones que cambiarían la posición
+        filtered_actions = filter(lambda action: action(pos) != pos, self.actions)
+
+        # Aplicar las acciones filtradas secuencialmente con reduce
+        final_pos = reduce(lambda acc, action: action(acc), filtered_actions, pos)
+
+        mc.postToChat(f"FunctionalAgent ha terminado en la posición {final_pos}")
+        time.sleep(1)  # Pausa corta para reducir conflictos de concurrencia
+
+class ReflectiveBehavior(Behavior):
+    def __init__(self, agent):
+        self.agent = agent
+
+    def action(self, message=None):
+        mc.postToChat("ReflectiveAgent ha recibido un mensaje de inspección.")
+        
+        # Inspeccionar atributos y métodos del agente
+        attributes = dir(self.agent)
+        mc.postToChat(f"Atributos del agente: {attributes}")
+        
+        # Ejecutar un método dinámicamente, si el mensaje coincide con el nombre de un método
+        if hasattr(self.agent, message) and callable(getattr(self.agent, message)):
+            method = getattr(self.agent, message)
+            mc.postToChat(f"Ejecutando método {message} dinámicamente.")
+            method()
+        
+        # Modificar un atributo dinámicamente
+        if hasattr(self.agent, "name"):
+            setattr(self.agent, "name", "ReflectiveAgentModificado")
+            mc.postToChat(f"El nombre del agente ha sido modificado a: {self.agent.name}")
+
+# Funciones de acción para el agente funcional
+def move_forward(pos):
+    # Solo mover si x es par
+    if pos[0] % 2 == 0:
+        new_pos = (pos[0] + 1, pos[1], pos[2])
+        mc.postToChat(f"FunctionalAgent se mueve a {new_pos}")
+        return new_pos
+    return pos  # Sin cambio si no se cumple la condición
+
+def build_block(pos):
+    # Solo construir si y es menor que 10
+    if pos[1] < 10:
+        new_pos = (pos[0], pos[1] + 1, pos[2])
+        mc.postToChat(f"FunctionalAgent construye en {new_pos}")
+        return new_pos
+    return pos  # Sin cambio si no se cumple la condición
+
+def destroy_block(pos):
+    # Solo destruir si z es múltiplo de 5
+    if pos[2] % 5 == 0:
+        new_pos = (pos[0], pos[1] - 1, pos[2])
+        mc.postToChat(f"FunctionalAgent destruye en {new_pos}")
+        return new_pos
+    return pos  # Sin cambio si no se cumple la condición
